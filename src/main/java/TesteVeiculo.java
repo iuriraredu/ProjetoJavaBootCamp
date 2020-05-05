@@ -3,10 +3,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class TesteVeiculo {
-    private static Veiculo gm = new Veiculo();
+    private static Veiculo gm;
 
     @BeforeAll
     public static void iniciaTudo(){
+        gm = new Veiculo();
         gm.setModelo("Cruze");
         gm.setCor("Preto");
         gm.setAno("2020");
